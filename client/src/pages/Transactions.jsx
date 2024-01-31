@@ -24,7 +24,7 @@ const Transactions = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${Port}/api`);
+        const response = await axios.get(`${Port}/api/transactions`);
         setTransactions(response.data.data);
       } catch (error) {
         setError(error.message || "An error occurred while fetching data.");
