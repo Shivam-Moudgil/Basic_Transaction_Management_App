@@ -4,7 +4,7 @@ const { getAllTransactions, createTransaction } = require("../controllers/transa
 
 const router = express.Router();
 
-router.get("/",getAllTransactions)
+router.get("/transactions",getAllTransactions)
 router.post("/create",createTransaction)
 
 module.exports=router;
